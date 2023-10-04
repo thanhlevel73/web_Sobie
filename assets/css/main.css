@@ -1,0 +1,277 @@
+header {
+    height: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: var(--white-color);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 10px 12px 3px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+}
+
+nav>a>img {
+    width: 200px;
+}
+
+nav>ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    font-size: 1.4rem;
+}
+
+nav>ul>li {
+    padding: 0 10px;
+}
+
+
+.search {
+    border: 1px solid;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.search>input {
+    font-size: 1.4rem;
+    outline: none;
+    border: none;
+
+}
+
+.search>i {
+    margin: 0 6px;
+    font-size: 1.5rem;
+}
+
+.carts,
+.user {
+    text-align: center;
+}
+
+.carts>i,
+.user>i {
+    font-size: 1.5rem;
+}
+
+.carts>p,
+.user>p {
+    font-size: 1.4rem;
+}
+
+.category {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 20px 0;
+}
+
+
+main img {
+    width: 100%;
+    margin-top: 70px;
+}
+
+.category>h2 {
+    font-size: 3rem;
+}
+
+.category>a {
+    font-size: 1.4rem;
+    color: var(--black-color);
+}
+
+.card {
+    display: block;
+    background-color: var(--white-color);
+    margin: 10px 0;
+    height: 530px;
+}
+
+.card>img {
+    width: 100%;
+    margin: 0;
+}
+
+.card>span {
+    font-size: 1.1rem;
+    display: inline-block;
+    padding: 10px 10px 0;
+}
+
+.card p {
+    font-size: 1.4rem;
+    margin: 10px;
+}
+
+.card p:last-child {
+    padding: 10px 0;
+    font-weight: 500;
+}
+
+menu {
+    text-align: center;
+}
+
+menu>button {
+    font-size: 1.4rem;
+    padding: 10px 30px;
+    background-color: #252a2b;
+    border: none;
+    border-radius: 2px;
+    margin: 20px 0;
+
+}
+
+menu>button>a {
+    color: var(--white-color);
+}
+
+menu>button:hover {
+    background-color: #4a90e2;
+    animation: fadein ease-in-out 0.3s;
+}
+
+
+section {
+    height: 700px;
+    background-color: #f5f5f5;
+}
+
+section img {
+    width: 100%;
+    margin: 0;
+}
+
+
+footer {
+    background-color: var(--white-color);
+}
+
+
+footer h3 {
+    font-size: 2rem;
+    margin: 20px 0;
+}
+
+footer ul li,
+footer p {
+    font-size: 1.4rem;
+    line-height: 1.6;
+}
+
+footer p:nth-child(1) {
+    margin-top: 60px;
+}
+
+footer .phone i {
+    font-size: 1.6rem;
+}
+
+footer .phone span {
+    font-size: 2rem;
+}
+
+footer address a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: var(--black-color)
+}
+
+footer address a i {
+    font-size: 2rem;
+    margin: 20px 0;
+}
+
+
+footer>p {
+    color: var(--black-color);
+    font-size: 1.3rem;
+    text-align: center;
+    margin-top: 60px;
+    padding-top: 10px;
+    border-top: 1px solid var(--black-color);
+}
+
+nav>ul>li {
+    cursor: pointer;
+}
+
+nav>ul>li:hover {
+    color: #628fdc;
+}
+
+nav .Customer,
+nav .accessory,
+nav .kid,
+nav .man,
+nav .woman,
+nav .collections {
+    position: absolute;
+    display: block;
+    background-color: var(--white-color);
+    top: 60px;
+    left: 0;
+    right: 0;
+    height: 80px;
+    display: none;
+    color: var(--black-color);
+    animation: fadein ease-in 0.3s;
+
+}
+
+.Customer ul,
+.accessory ul,
+.kid ul,
+.man ul,
+.woman ul,
+.collections ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}
+
+.Customer ul li,
+.accessory ul li,
+.kid ul li,
+.man ul li,
+.woman ul li,
+.collections ul li {
+    margin: 0 40px;
+    list-style: none;
+}
+
+nav>ul>li:nth-child(6)::after,
+nav>ul>li:nth-child(5)::after,
+nav>ul>li:nth-child(4)::after,
+nav>ul>li:nth-child(3)::after,
+nav>ul>li:nth-child(2)::after,
+nav>ul>li:first-child::after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 50px;
+    position: absolute;
+    top: 40px;
+}
+
+nav ul li:nth-child(6):hover .Customer,
+nav ul li:nth-child(5):hover .accessory,
+nav ul li:nth-child(4):hover .kid,
+nav ul li:nth-child(3):hover .man,
+nav ul li:nth-child(2):hover .woman,
+nav ul li:first-child:hover .collections {
+    display: block;
+}
